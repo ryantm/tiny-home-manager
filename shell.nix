@@ -33,7 +33,7 @@ in pkgs.mkShell rec {
     cat <<HOMENIX >$TMPFILE
     ${home.nix}
     HOMENIX
-    ${home-manager}/bin/home-manager build
+    ${home-manager}/bin/home-manager switch
     exit 0
   '';
 
