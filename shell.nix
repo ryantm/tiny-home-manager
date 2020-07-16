@@ -23,7 +23,7 @@ let
     }
   '';
 
-in pkgs.mkShell rec {
+in pkgs.mkShell {
 
   shellHook = ''
     export NIX_PATH="nixpkgs=${nixpkgs-src}:home-manager=${home-manager-src}"
